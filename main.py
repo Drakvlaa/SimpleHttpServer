@@ -14,7 +14,7 @@ class TCPServer:
     s.bind((self.host, self.port))
     s.listen(5)
 
-    print("Listening at", s.getsockname())
+    print("Listening at", s.getsockname()) #shows what port are you listening at
 
     while True:
       conn, addr = s.accept()
